@@ -64,12 +64,9 @@ public class StudentRepository {
         return list;
     }
 
-    public void deleteTeacherByName(String name)
-    {
-        if(studentTeacher.containsKey(name))
-        {
-            studentTeacher.remove(name);
-        }
+    public void deleteTeacherByName(String name) {
+        teacher.remove(name);
+        studentTeacher.remove(name);
     }
 
     public void deleteAllTeachers()
